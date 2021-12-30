@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="login-form">
+    <form #frmLogin="ngForm" (submit)="LoginClick(frmLogin.value)" >
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" name="Email"  ngModel #Email="ngModel" class="form-control" placeholder="Username" required="required">
+        </div>
+        <div class="form-group mt-2">
+            <input type="password" name="Password"  ngModel #Password="ngModel" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group mt-2">
+            <button type="login" class="btn btn-primary btn-block">Login</button>
+        </div>       
+    </form>
+    <p class="text-center"><a [routerLink]="'/register'">Create an Account</a></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+ 

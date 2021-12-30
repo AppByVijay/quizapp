@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="login-form">
+    <form  #frmRegister="ngForm" method="post" (submit)="RegisterClick(frmRegister.value)" >
+        <h2 class="text-center">Sign Up</h2>       
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+            <input type="text" name="Name" ngModel #Name="ngModel" class="form-control" placeholder="Name" required="required">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Your Email</label>
+          <input type="text" name="Email" ngModel #Email="ngModel" class="form-control" placeholder="Email" required="required">
+        </div>
+
+        <div class="form-group mt-2">
+          <label class="form-label">Your Password</label>
+          <input type="password" name="Password"  ngModel #Password="ngModel" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group mt-2">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>  
+             
+    </form>
+    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a [routerLink]="'/login'" class="fw-bold text-body">Login here</a></p>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+ 
